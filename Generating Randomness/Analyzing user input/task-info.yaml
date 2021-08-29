@@ -83,5 +83,5 @@ files:
         GenRandTest('predictor.predictor').run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/156/stages/814/implement#comment
-status: Unchecked
+status: Failed
 record: -1
