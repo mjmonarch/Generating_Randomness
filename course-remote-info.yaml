@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/475510/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 31 Aug 2021 09:21:38 UTC
+update_date: Sat, 18 Sep 2021 12:56:11 UTC
 stages:
 - id: 813
   step: 12095
@@ -91,6 +91,8 @@ topics:
     theory_id: 10924
   - title: Discrete random variables
     theory_id: 14841
+  - title: Finding probabilities
+    theory_id: 15797
   - title: Load module
     theory_id: 6019
   - title: Random module
