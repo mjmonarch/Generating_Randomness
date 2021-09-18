@@ -1,10 +1,5 @@
 type: edu
 files:
-- name: predictor/predictor.py
-  visible: true
-  text: |
-    print('Hello, World!')
-  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -82,6 +77,23 @@ files:
     if __name__ == '__main__':
         GenRandTest('predictor.predictor').run_tests()
   learner_created: false
+- name: predictor/predictor.py
+  visible: true
+  text: |
+    print('Hello, World!')
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/156/stages/814/implement#comment
 status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nThe string \"{'000': [0, 0], '001': [0, 0],\
+    \ '010': [3, 0], '011': [1, 0], '100': [0, 0], '101': [5, 0], '110': [1, 0], '111':\
+    \ [0, 0]}\" of your output is supposed to contain the final data string. \nHowever,\
+    \ it contains wrong number of symbols\n\nPlease find below the output of your\
+    \ program during this failed test.\nNote that the '>' character indicates the\
+    \ beginning of the input line.\n\n---\n\nPrint a random string containing 0 or\
+    \ 1:> 1010101101010\n1010101101010\nFinal data string:\n1010101101010\n\n{'000':\
+    \ [0, 0], '001': [0, 0], '010': [3, 0], '011': [1, 0], '100': [0, 0], '101': [5,\
+    \ 0], '110': [1, 0], '111': [0, 0]}\n000: 0,0\n001: 0,0\n010: 3,0\n011: 1,0\n\
+    100: 0,0\n101: 5,0\n110: 1,0\n111: 0,0"
+  time: Sat, 18 Sep 2021 13:32:58 UTC
 record: -1

@@ -32,15 +32,21 @@ while len(general_string) < MINIMAL_LENGTH:
     input_string_filtered = "".join([x for x in input_string if x in APPROPRIATE_INPUT])
     general_string = general_string + input_string_filtered
 
-triads_dictionary = dict.fromkeys(TRIADS_LIST, [0, 0])
+# triads_dictionary = dict.fromkeys(TRIADS_LIST, [0, 0])
+triads_dictionary = dict.fromkeys(TRIADS_LIST, None)
+for triad in triads_dictionary.keys():
+    triads_dictionary[triad] = [0, 0]
 
 for i in range(len(general_string) - 3):
-    triad = '000'
-    if triad == general_string[i:i + 3]:
+    for triad in triads_dictionary.keys():
+        if triad == general_string[i:i + 3]:
             digit = general_string[i+3]
             (triads_dictionary[triad])[0] += 1  # !!!
-            # break
+            break
+
 print("Final data string:")
 print(general_string)
+print()
 print(triads_dictionary)
-
+for triad in triads_dictionary.keys():
+    print(triad, ": ", triads_dictionary[triad][0], ",", triads_dictionary[triad][1], sep='')
