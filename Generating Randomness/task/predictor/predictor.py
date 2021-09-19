@@ -18,7 +18,7 @@
 
 # ------------------------Stage 2------------------------------------
 
-MINIMAL_LENGTH = 10
+MINIMAL_LENGTH = 100
 APPROPRIATE_INPUT = ['0', '1']
 TRIADS_LIST = ['000', '001', '010', '011', '100', '101', '110', '111']
 
@@ -40,13 +40,15 @@ for triad in triads_dictionary.keys():
 for i in range(len(general_string) - 3):
     for triad in triads_dictionary.keys():
         if triad == general_string[i:i + 3]:
-            digit = general_string[i+3]
-            (triads_dictionary[triad])[0] += 1  # !!!
+            digit = int(general_string[i+3])
+            if digit == 0:
+                (triads_dictionary[triad])[0] += 1
+            elif digit == 1:
+                (triads_dictionary[triad])[1] += 1
             break
 
 print("Final data string:")
 print(general_string)
 print()
-print(triads_dictionary)
 for triad in triads_dictionary.keys():
     print(triad, ": ", triads_dictionary[triad][0], ",", triads_dictionary[triad][1], sep='')
