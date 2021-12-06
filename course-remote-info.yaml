@@ -3,17 +3,17 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/475510/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Sat, 18 Sep 2021 12:56:11 UTC
+update_date: Mon, 06 Dec 2021 18:21:40 UTC
 stages:
 - id: 813
   step: 12095
   is_completed: true
 - id: 814
   step: 12096
-  is_completed: false
+  is_completed: true
 - id: 815
   step: 12097
-  is_completed: false
+  is_completed: true
 - id: 816
   step: 12098
   is_completed: false
@@ -58,8 +58,6 @@ topics:
   - title: List comprehension
     theory_id: 6315
   1:
-  - title: Binary numbers
-    theory_id: 5544
   - title: Invoking a function
     theory_id: 5891
   - title: Declaring a function
@@ -81,16 +79,6 @@ topics:
     theory_id: 7892
   - title: The concept of probability
     theory_id: 10538
-  - title: Conditional probability
-    theory_id: 10348
-  - title: Rules of sum, product and complement
-    theory_id: 10637
-  - title: Bayes theorem
-    theory_id: 10579
-  - title: Geometric interpretation of probability
-    theory_id: 10924
-  - title: Discrete random variables
-    theory_id: 14841
   - title: Finding probabilities
     theory_id: 15797
   - title: Load module
